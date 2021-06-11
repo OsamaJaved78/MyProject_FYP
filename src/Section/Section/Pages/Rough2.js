@@ -1,109 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AnimatePresence,motion } from "framer-motion";
-import Trans from './Trans';
+import { motion } from "framer-motion";
+import Rough from './rough';
 
 
-function Home() {
+function Rough2() {
 	
     return(
 <motion.div 
-    	initial="out" 
-		animate="in"
-		exit="out"
-		variants={Trans}
+    	initial={{opacity: 0}}
+		animate={{opacity:1}}
+		exit={{opacity: 0 }}
 		id="fh5co-wrapper">
 		<div id="fh5co-page">
 
-
-		{/* <!-- end:header-top --> */}
-	
-		<div className="fh5co-hero">
-			<div className="fh5co-overlay"></div>
-			<div className="fh5co-cover" data-stellar-background-ratio="0.5" >
-				<div className="desc">
-					<div className="container">
-						<div className="row">
-							<div className="col-sm-5 col-md-5">
-								<div className="tabulation animate-box">
-
-								  {/* <!-- Nav tabs --> */}
-								   <ul className="nav nav-tabs" role="tablist">
-								      <li role="presentation" className="active">
-								      	<a href="#" aria-controls="flights" role="tab" data-toggle="tab">Bus</a>
-								      </li>
-								      
-								   </ul>
-
-								   {/* <!-- Tab panes --> */}
-									<div className="tab-content">
-									 <div role="tabpanel" className="tab-pane active" id="flights">
-										<div className="row">
-											<div className="col-xxs-12 col-xs-6 mt">
-												<div className="input-field">
-													<label for="from">From:</label>
-													<input type="text" className="form-control" id="from-place" placeholder="Karachi"/>
-												</div>
-											</div>
-											<div className="col-xxs-12 col-xs-6 mt">
-												<div className="input-field">
-													<label for="from">To:</label>
-													<input type="text" className="form-control" id="to-place" placeholder="Islamabad"/>
-												</div>
-											</div>
-											<div className="col-xxs-12 col-xs-6 mt alternate">
-												<div className="input-field">
-													<label for="date-start">Departure Date:</label>
-													<input type="date" className="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
-												</div>
-											</div>
-											<div className="col-sm-12 mt">
-												<section>
-													<label for="className">Bus: </label>
-													<select className="cs-select cs-skin-border">
-													<option value="" disabled selected>Select Service</option>
-														<option value="Faisal Mover's">Faisal Mover's</option>
-														<option value="Daewoo">Daewoo</option>
-														<option value="Adil Shah">Adil Shah</option>
-														<option value="Al Sanoober">Al Sanoober</option>
-													</select>
-												</section>
-											</div>
-											<div className="col-xxs-12 col-xs-6 mt">
-												<section>
-													<label for="className">Seats: </label>
-													<select className="cs-select cs-skin-border">
-													<option value="Select Seats" disabled selected>Select Seats</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-													</select>
-												</section>
-											</div>
-											<div className="col-xs-12">
-												<input type="submit" className="btn btn-primary btn-block" value="Search Bus" />
-											</div>
-										</div>
-									 </div>
-									</div>
-								</div>
-							</div>
-
-
-							<div className="desc2 animate-box">
-								<div className="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-									<p>Welcome to <Link to="Home" target="_blank" className="fh5co-site-name">BookKaroo </Link></p>
-									<h3>Get the best discounts on all Buses across Pakistan</h3>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
+        <div className="slide-section">
+		<Rough/>
+        </div>
 		
 		<div id="fh5co-tours" className="fh5co-section-gray" >
 			<div className="container">
@@ -451,4 +364,4 @@ function Home() {
     
 }
 
-export default Home;
+export default Rough2;

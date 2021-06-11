@@ -1,17 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AnimatePresence,motion } from "framer-motion";
-import Trans from './Trans';
+import { motion } from "framer-motion";
+import BookingForm from './Bookingform/BookingForm';
 
 
 function Home() {
 	
     return(
 <motion.div 
-    	initial="out" 
-		animate="in"
-		exit="out"
-		variants={Trans}
+    	initial={{opacity: 0}}
+		animate={{opacity:1}}
+		exit={{opacity: 0 }}
 		id="fh5co-wrapper">
 		<div id="fh5co-page">
 
@@ -21,6 +20,7 @@ function Home() {
 		<div className="fh5co-hero">
 			<div className="fh5co-overlay"></div>
 			<div className="fh5co-cover" data-stellar-background-ratio="0.5" >
+				
 				<div className="desc">
 					<div className="container">
 						<div className="row">
@@ -93,7 +93,7 @@ function Home() {
 
 							<div className="desc2 animate-box">
 								<div className="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-									<p>Welcome to <Link to="Home" target="_blank" className="fh5co-site-name">BookKaroo </Link></p>
+									<p>Welcome to <Link to="Home" target="_blank" className="fh5co-site-name">BookKaraao </Link></p>
 									<h3>Get the best discounts on all Buses across Pakistan</h3>
 									
 								</div>

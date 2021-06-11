@@ -887,7 +887,7 @@ div.cs-select span {
 .flight-book .desc {
   width: 60%;
   float: right;
-  background: #1a1ddb;
+  background: #00AD7C;
   padding: 6px 20px;
 }
 .flight-book .desc .left {
@@ -1052,7 +1052,7 @@ div.cs-select span {
   width: 100%;
   display: table-cell;
   vertical-align: middle;
-  background: #1c30eb;
+  background: #00AD7C;
   z-index: 12;
 }
 #fh5co-destination-list li .title-bg h2 {
@@ -1209,7 +1209,7 @@ div.cs-select span {
 
 #fh5co-testimonial {
   position: relative;
-  background: #1636ec;
+  background: #00AD7C;
 }
 #fh5co-testimonial .fh5co-heading h2 {
   color: white;
@@ -1258,7 +1258,7 @@ div.cs-select span {
   width: 56px;
   height: 56px;
   margin-top: -30px;
-  /* background: #171522;  For Late*/
+  background: #00AD7C;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1976,6 +1976,10 @@ div.cs-select span {
   z-index: 9999;
 }
 
+.slide-section{
+  background-image: url('/src/Section/Pages/reservation-bg.jpg');
+  /* background: url(../images/) center no-repeat #222222; */
+}
 
 /*# sourceMappingURL=style.css.map */
 
